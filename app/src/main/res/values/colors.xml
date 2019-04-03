@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D7ECB8</color>
+    <color name="colorPrimaryDark">#D7ECB8</color>
+    <color name="colorAccent">#303F9F</color>
+    <color name="colorBackground">#D7ECB8</color>
+    <color name="colorMark">#003300</color>
+    <color name="NoteBackground">#D7ECB8</color>
+    <color name="NoteMark">#003300</color>
+    <color name="blueNoteBackground">#90d7ec</color>
+    <color name="blueNote">#009ad6</color>
+</resources>

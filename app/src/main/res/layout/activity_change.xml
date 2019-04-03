@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editActivity">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="2dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="主题："
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        app:layout_constraintEnd_toStartOf="@id/edit_subject"/>
+
+    <EditText
+        android:id="@+id/change_subject"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:maxLines="1"
+        app:layout_constraintStart_toEndOf="@id/subject"
+        app:layout_constraintTop_toBottomOf="@id/date" />
+
+    <!--<android.support.design.widget.TextInputEditText-->
+        <!--android:id="@+id/change_text"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="text"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/edit_subject" />-->
+
+    <EditText
+        android:id="@+id/change_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:background="@null"
+        android:hint="note:"
+        app:layout_constraintTop_toBottomOf="@id/change_subject"/>
+
+    <!--<EditText-->
+        <!--android:id="@+id/edit_subject"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_constraintStart_toEndOf="@id/subject"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/date"/>-->
+
+    <Button
+        android:id="@+id/save_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="@color/NoteBackground"
+        android:text="保存"
+        android:textColor="@color/NoteMark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="saveNote"/>
+
+</android.support.constraint.ConstraintLayout>
